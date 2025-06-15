@@ -1,0 +1,30 @@
+{
+  "name": "squirly-website",
+  "version": "1.0.0",
+  "description": "Modern website for comedy performer Squirly",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "serve": "npx serve .",
+    "build": "echo 'No build process needed - static site ready for deployment'",
+    "deploy-netlify": "npx netlify-cli deploy --prod --dir .",
+    "deploy-vercel": "npx vercel --prod"
+  },
+  "keywords": [
+    "comedy",
+    "performer",
+    "website",
+    "static",
+    "responsive"
+  ],
+  "author": "Squirly",
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "^14.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/squirly-website.git"
+  },
+  "homepage": "https://www.squirly.com.au"
+}
