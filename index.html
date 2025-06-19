@@ -53,9 +53,9 @@
             <a href="https://www.facebook.com/Squirldog1" target="_blank" class="social-link">
                 <img src="pictures/icons/facebook-2.png" alt="Facebook" class="social-icon">
             </a>
-            <!-- <a href="https://open.spotify.com/show/YOUR_PODCAST_LINK" target="_blank" class="social-link">
-                <img src="icons/podcast.svg" alt="Podcast">
-            </a> -->
+            <a href="https://open.spotify.com/show/3qWExqwFpP2sn7GbhwexcD?si=7b6bc306053541c2" target="_blank" class="social-link">
+                <img src="pictures/icons/spotify.png" alt="Podcast" class="social-icon">
+            </a>
         </div>
     </div>
 </header>
@@ -166,29 +166,47 @@
     <section id="contact" class="contact">
         <div class="container">
             <h2>Contact</h2>
+            <p class="comedian-intro">Book me for your next event, and I promise not to talk all about fishing, but I will embarrass myself at least twice. I may make it about my existential dread, but that's all part of the service.</p>
+            
             <div class="contact-content">
                 <div class="contact-info">
-                    <p>Get in touch for bookings, collaborations, or just to say hello!</p>
                     <div class="contact-methods">
                         <div class="contact-method">
                             <strong>Email:</strong>
                             <a href="mailto:hello@squirly.com.au">hello@squirly.com.au</a>
                         </div>
                         <div class="contact-method">
-                            <strong>Social:</strong>
-                            <a href="#" target="_blank">Follow on Social Media</a>
+                            <strong>Stalk me online:</strong>
+                            <div class="social-links-contact">
+                                <a href="https://www.instagram.com/squirldog1" target="_blank" class="social-contact-link">
+                                    <img src="pictures/icons/instagram-4.png" alt="Instagram" class="social-icon">
+                                    <span>See my fishing fails</span>
+                                </a>
+                                <a href="https://www.facebook.com/Squirldog1" target="_blank" class="social-contact-link">
+                                    <img src="pictures/icons/facebook-2.png" alt="Facebook" class="social-icon">
+                                    <span>Boomer comedy content</span>
+                                </a>
+                                <a href="https://open.spotify.com/show/3qWExqwFpP2sn7GbhwexcD?si=7b6bc306053541c2" target="_blank" class="social-contact-link">
+                                    <img src="pictures/icons/spotify.png" alt="Podcast" class="social-icon">
+                                    <span>Hear me ramble</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <form class="contact-form">
+                
+                <form class="contact-form" method="POST" action="send.php">
                     <div class="form-group">
-                        <input type="text" name="name" placeholder="Your Name" required>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
                     </div>
                     <div class="form-group">
-                        <input type="email" name="email" placeholder="Your Email" required>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
                     </div>
                     <div class="form-group">
-                        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
                     </div>
                     <button type="submit" class="submit-btn">Send Message</button>
                 </form>
@@ -199,7 +217,7 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Squirly. All rights reserved.</p>
+            <p>&copy; 2025 Squirly. Site setup by my super-squid soon-to-be-wife.</p>
         </div>
     </footer>
 
