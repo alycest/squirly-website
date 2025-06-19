@@ -41,29 +41,16 @@ squirly-website/
 ## Deployment Options
 
 ### Option 1: GitHub Pages (Free)
-1. Create a new repository on GitHub
-2. Upload all files to the repository
+1. Created a new repository on GitHub - squirly-website
+2. Pushed all files to the repository
 3. Go to Settings > Pages
 4. Select "Deploy from a branch" and choose "main"
-5. Your site will be available at `https://yourusername.github.io/repository-name`
+5. Your site will be available at `https://alycest.github.io/squirly-website`
 
-### Option 2: Netlify (Free)
-1. Go to [netlify.com](https://netlify.com)
-2. Drag and drop the `squirly-website` folder onto their deploy area
-3. Get an instant live URL
-4. Optional: Connect to GitHub for automatic deployments
-
-### Option 3: Vercel (Free)
-1. Go to [vercel.com](https://vercel.com)
-2. Import your GitHub repository
-3. Deploy with one click
-
-### Option 4: Traditional Web Hosting
+### Traditional Web Hosting - using web central (beginner package)
 Upload all files to your web hosting provider's public folder (usually `public_html` or `www`).
 
-## Customization Guide
-
-### Updating Content
+## Customization Guide & Updating Content
 
 #### Personal Information
 - Edit the hero section in `index.html` (lines 45-50)
@@ -122,8 +109,7 @@ Add these to the `<head>` section of `index.html`:
 ### Using Your Existing Domain (squirly.com.au)
 
 1. **DNS Configuration**: 
-   - If using GitHub Pages: Create a CNAME record pointing to `yourusername.github.io`
-   - If using Netlify/Vercel: Follow their custom domain instructions
+   - If using GitHub Pages: Create a CNAME record pointing to `yourusername.github.io` on web central
    - If using traditional hosting: Point A records to your hosting provider's IP
 
 2. **SSL Certificate**: Most modern hosting providers offer free SSL certificates
