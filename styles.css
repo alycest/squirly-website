@@ -126,6 +126,14 @@ html {
     align-items: center;
 }
 
+.hero-image {
+    width: 100%;
+    height: 500px;
+    object-fit: cover; /* This will show the entire image */
+    object-position: center 65%;
+    /* object-position: left top; */
+}
+
 .hero-title {
     font-size: 3rem;
     font-weight: 700;
@@ -212,7 +220,7 @@ html {
     line-height: 1.8;
 }
 
-/* Contact Section */
+/* Contact Section 
 .comedian-intro {
     text-align: center;
     font-size: 1.1rem;
@@ -254,7 +262,7 @@ html {
 
 .contact-method a:hover {
     text-decoration: underline;
-}
+} */
 
 /* Social Contact Links */
 .social-links-contact {
@@ -295,11 +303,11 @@ html {
 
 .social-contact-link:hover span {
     color: #333;
-}
+} 
 
 /* Footer */
 .footer {
-    background: #2c3e50;
+    background: rgba(75, 57, 139, 0.95);
     color: white;
     text-align: center;
     padding: 2rem 0;
