@@ -122,7 +122,7 @@ Add these to the `<head>` section of `index.html`:
 - Currently static content in the blog section
 - Consider integrating with:
   - Headless CMS (Strapi, Contentful)
-  - Static site generator (Jekyll, Hugo)
+  - Static site generator (Jekyll, Huls
   - Simple markdown files
 
 ### Video Content

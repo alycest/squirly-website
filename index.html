@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Squirly - Comedian | Fisherman | Podcaster</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="contact.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -70,47 +71,44 @@
         <div class="container">
             <h2>About Squirly</h2>
             <div class="about-content">
-                <p>Welcome to the world of Squirly - where comedy meets creativity. With a unique style and unforgettable performances, Squirly brings laughter to audiences across Australia.</p>
-                <p>From intimate comedy clubs to larger venues, each show is crafted to deliver an experience that's both hilarious and memorable.</p>
+            <p>G'day Big Horses, I'm Squirly. Originally from Exmouth, where the fish are big, the beers are cold, and the blokes don't wear shoes — even at weddings. The missus says I have to at least wear thongs at ours…</p>
+
+            <p>I kicked off my comedy career at the triple j Raw Comedy and somehow landed in the National Final. Since then, I've been taking my stand-up around WA, from city venues to towns where the pub doubles as a post office and a childcare centre.</p>
+
+            <p>Which works for me — I can go fishing and ponder existential dread.</p>
+
+            <p>If you're looking to book a top-notch comedian… yes, let's make this weirdly professional. Hit me up. I'll probably fix your swag zipper while I'm at it.</p>
             </div>
         </div>
     </section>
 
+    <!--<section id="contact">
+    <div id="contact-placeholder">
+        <p>✅ Test: Contact section loaded.</p>
+    </div>
+    </section> -->
+
     <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2>Contact</h2>
-            <p class="comedian-intro">Book me for your next event, and I promise not to talk all about fishing, but I will embarrass myself at least twice. I may make it about my existential dread, but that's all part of the service.</p>
-            
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-methods">
-                        <div class="contact-method">
-                            <strong>Email:</strong>
-                            <a href="mailto:hello@squirly.com.au">hello@squirly.com.au</a>
-                        </div>
-                        <div class="contact-method">
-                            <strong>Stalk me online:</strong>
-                            <div class="social-links-contact">
-                                <a href="https://www.instagram.com/squirldog1" target="_blank" class="social-contact-link">
-                                    <img src="pictures/icons/instagram-4.png" alt="Instagram" class="social-icon">
-                                    <span>See my fishing fails</span>
-                                </a>
-                                <a href="https://www.facebook.com/Squirldog1" target="_blank" class="social-contact-link">
-                                    <img src="pictures/icons/facebook-2.png" alt="Facebook" class="social-icon">
-                                    <span>Boomer comedy content</span>
-                                </a>
-                                <a href="https://open.spotify.com/show/3qWExqwFpP2sn7GbhwexcD?si=7b6bc306053541c2" target="_blank" class="social-contact-link">
-                                    <img src="pictures/icons/spotify.png" alt="Podcast" class="social-icon">
-                                    <span>Hear me ramble</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <section id="contact">
+    <div id="contact-placeholder"></div>
     </section>
+
+    <script>
+    fetch('contact.html')
+        .then(response => response.text())
+        .then(html => {
+        document.getElementById('contact-placeholder').innerHTML = html;
+
+        // Optional: load JS for the form if needed
+        const script = document.createElement('script');
+        script.src = 'contact.js';
+        document.body.appendChild(script);
+        })
+        .catch(error => {
+        console.error('Could not load contact form:', error);
+        });
+    </script>
+
 
     <!-- Footer -->
     <footer class="footer">

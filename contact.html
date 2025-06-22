@@ -1,44 +1,83 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Squirly</title>
-    <link rel="stylesheet" href="contact.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us - Squirly</title>
+  <link rel="stylesheet" href="contact_test.css" />
 </head>
 <body>
-    <div class="contact-container">
-        <div class="contact-header">
-            <h1 class="contact-title">Get in Touch</h1>
-            <p class="contact-subtitle">We'd love to hear from you</p>
+    Contact Section 
+  <section id="contact" class="contact"> -->
+    <div class="container">
+      <h2>Contact</h2>
+      <p class="comedian-intro">
+        Book me for your next event, and I promise not to talk all about fishing, but I will embarrass myself at least twice. I may make it about my existential dread, but that's all part of the service.
+      </p> 
+
+      <div class="contact-content">
+        <!-- Contact Info & Socials --> 
+        <div class="contact-info">
+          <div class="contact-methods">
+            <div class="contact-method">
+              <strong>Email:</strong>
+              <a href="mailto:hello@squirly.com.au">hello@squirly.com.au</a>
+            </div>
+
+            <div class="contact-method">
+              <strong>Stalk me online:</strong>
+              <div class="social-links-contact">
+                <a href="https://www.instagram.com/squirldog1" target="_blank" class="social-contact-link">
+                  <img src="pictures/icons/instagram-4.png" alt="Instagram" class="social-icon" />
+                  <span>See my fishing fails</span>
+                </a>
+                <a href="https://www.facebook.com/Squirldog1" target="_blank" class="social-contact-link">
+                  <img src="pictures/icons/facebook-2.png" alt="Facebook" class="social-icon" />
+                  <span>Boomer comedy content</span>
+                </a>
+                <a href="https://open.spotify.com/show/3qWExqwFpP2sn7GbhwexcD?si=7b6bc306053541c2" target="_blank" class="social-contact-link">
+                  <img src="pictures/icons/spotify.png" alt="Podcast" class="social-icon" />
+                  <span>Hear me ramble</span>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <form action="mailto:hello@squirly.com.au" method="post" enctype="text/plain" id="contactForm">
+        <!-- Contact Form -->
+        <div class="contact-container">
+          <div class="contact-header">
+            <h3 class="contact-title">Get in Touch</h3>
+            <p class="contact-subtitle">I've got a boat and need friends to go out with!</p>
+          </div>
+
+          <form action="https://formspree.io/f/xblyaqgw" method="POST" id="contactForm">
             <div class="form-group">
-                <label for="name" class="form-label">Name</label>
-                <input type="text" id="name" name="name" class="form-input" required>
+              <label for="name" class="form-label">Name</label>
+              <input type="text" id="name" name="name" class="form-input" required />
             </div>
 
             <div class="form-group">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" id="email" name="email" class="form-input" required>
+              <label for="email" class="form-label">Email</label>
+              <input type="email" id="email" name="email" class="form-input" required />
             </div>
 
             <div class="form-group">
-                <label for="message" class="form-label">Message</label>
-                <textarea id="message" name="message" class="form-textarea" placeholder="Tell us what's on your mind..." required></textarea>
+              <label for="message" class="form-label">Message</label>
+              <textarea id="message" name="message" class="form-textarea" placeholder="Tell us what's on your mind..." required></textarea>
             </div>
 
-            <button type="submit" class="submit-btn">
-                Send Message
-            </button>
-        </form>
+            <button type="submit" class="submit-btn">Send Message</button>
+          </form>
 
-        <div class="form-footer">
+          <div class="form-footer">
             <p>We'll get back to you within 24 hours</p>
+          </div>
         </div>
+      <!-- </div>
     </div>
+  </section>
 
-    <script src="contact.js"></script>
+  <script src="contact_test.js"></script>
 </body>
 </html>
